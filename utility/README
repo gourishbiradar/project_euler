@@ -1,0 +1,8 @@
+Writing utility functions in one place can help in reusing them elsewhere in this mathemtically heavy set of problems
+
+#TODO:
+1. Implement a timer -> DONE
+2. Implement prime number generator
+3. Implement gcd and lcm finder
+4. Implement function that generates a vector of prime divsiors of a number
+5. Implement test suites
