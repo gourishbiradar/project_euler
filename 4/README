@@ -1,0 +1,11 @@
+Largest palindrome product
+
+largest palindrome formed of 2 digit number product is 9009 (91*99)
+
+
+we need to find the largest palindrome formed by product of two 3 digit numbers 
+
+largest 3 digit numbers can be 999 and 999 and we can keep going down the list from 999, since multiplication of a*b=b*a, we can reduce one number at a time
+
+
+We need to implement a isPalindrome for integers in utility
