@@ -8,7 +8,7 @@ int main()
 	Timer t("Project Euler 3");
 	long int number(LIMIT);
 	double find_primes_till(sqrt(LIMIT));
-	std::vector<long int> primes(PrimeGenerator::getPrimes(find_primes_till));
+	std::vector<long int> primes(numberUtils::getPrimes(find_primes_till));
 	for(auto itr = primes.rbegin();itr!=primes.rend();itr++)
 	{
 		if(number%(*itr) == 0)

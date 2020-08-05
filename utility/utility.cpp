@@ -34,7 +34,6 @@ namespace numberUtils
 		{
 			if(potential_primes[i])
 			{
-				B
 				for(double j=i;i*j<limit;j++)
 				{
 					potential_primes[i*j] = false;
