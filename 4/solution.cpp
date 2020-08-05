@@ -4,12 +4,13 @@
 #include "utility.h"
 using namespace std;
 
+//Using reference https://www.xarg.org/puzzle/project-euler/problem-4/#:~:text=The%20largest%20palindrome%20made%20from,of%20two%203%2Ddigit%20numbers.
+
 int main()
 {
 	Timer t("Project Euler problem 4: Largest Palindrome product");
 	int answer;
-	//TODO:: Let's figure out a non brute force method
-	for(int a=999;a>100;a--)
+	for(int a=990;a>100;a-=11)
 	{
 		for(int b=999;b>100;b--)
 		{
