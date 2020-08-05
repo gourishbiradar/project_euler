@@ -1,0 +1,4 @@
+Aim of using tests folder is to maintain the sanity of any utilities written
+
+Unfortunately we are currently only having a place holder tests.cpp 
+Needs imporvment in this area since the goal is to be TDD driven in this repo
