@@ -1,0 +1,9 @@
+Formula to calculate the sum of squares of first n natural numbers : n*(n+1)*(2*n+1)/6 --> 1
+
+
+Formula to calculate the sum of first n natural numbers : n*(n+1)/2
+
+Formula to find the square of sum of first n natural numbers : n^2*(n+1)^2/4 --> 2
+
+
+The formula to calculate the diff of squares is (1) - (2)
