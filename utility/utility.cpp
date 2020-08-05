@@ -23,7 +23,7 @@ Timer::~Timer()
 	std::cout << "Timer stopped for : " << this->log_message << " Took " << time_spent.count() << " seconds \n";
 }
 
-namespace PrimeGenerator
+namespace numberUtils
 {
 	std::vector<long int> getPrimes(double limit)
 	{
@@ -34,6 +34,7 @@ namespace PrimeGenerator
 		{
 			if(potential_primes[i])
 			{
+				B
 				for(double j=i;i*j<limit;j++)
 				{
 					potential_primes[i*j] = false;

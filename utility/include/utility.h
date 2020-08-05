@@ -16,7 +16,7 @@ class Timer
 		~Timer();
 };
 
-namespace PrimeGenerator
+namespace numberUtils
 {
 	std::vector<long int> getPrimes(double limit);
 	std::vector<long int> getPrimeDivisors(long int number);
