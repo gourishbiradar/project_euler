@@ -3,6 +3,7 @@
 #include <chrono>
 #include <string>
 #include <iostream>
+#include <cmath>
 
 class Timer
 {
@@ -18,17 +19,18 @@ class Timer
 namespace PrimeGenerator
 {
 	std::vector<long int> getPrimes(double limit);
+	std::vector<long int> getPrimeDivisors(long int number);
 }
 
-namespace VectorUtils
+namespace VectorUtils 
 {
 	template<class T>
-		void printArray(std::vector<T> arr)
+	void printArray(std::vector<T> arr)
+	{
+		for(auto& e : arr)
 		{
-			for(auto& e : arr)
-			{
-				std::cout << e << " " ;
-			}
+			std::cout << e << " " ;
 		}
+	}
 }
 

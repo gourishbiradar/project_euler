@@ -50,4 +50,19 @@ namespace PrimeGenerator
 		}
 		return primes;
 	}
+
+	std::vector<long int> getPrimeDivisors(long int number)
+	{
+		std::vector<long int> prime_divisors;
+		std::vector<long int> primes(getPrimes(sqrt(number)));
+		for(auto& prime : primes)
+		{
+			if((number%prime) == 0)
+			{
+				prime_divisors.push_back(prime);
+			}
+		}
+		return prime_divisors;
+	}
 }
+
