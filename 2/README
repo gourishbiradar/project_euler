@@ -1,0 +1,45 @@
+Sum of even fibonacci numbers which are less than 4*10^6
+
+
+Fibonacci numbers in this problem start from 1 and 2 (F0 and F1 respectively)
+But we will use the standard 1,1 as starting numbers to dervie the series formula
+Even number = Even number + Even number
+or
+Even number = odd number + odd number 
+
+Fib series : Fn = Fn-1 + Fn-2 
+
+F0 = 1
+F1 = 1
+F2 = 2 (even)
+F3 = 3
+F4 = 5
+F5 = 8 (even)
+F6 = 13
+F7 = 21
+F8 = 34 (even)
+
+Notice the pattern>> F2,F5,F8 are even Fibonacci numbers
+
+	>> every even fib number is offset by 3 numbers 
+	>> Try to find Fn in terms of sum of Fn-3 or Fn-6 and so on
+
+
+F2 = F1 + F0
+>>
+
+F5 = F4 + F3 
+F4 = F3 + F2
+F3 = F2 + F1 
+F2 = F1 + F0 
+
+Fn = Fn-1 + Fn-2 
+   = Fn-2 + Fn-3 + Fn-3 + Fn-4
+   = Fn-3 + Fn-4 + Fn-3 + Fn-3 + Fn-5 + Fn-6
+   = 3*Fn-3 + Fn-4 + Fn-5 + Fn-6
+   = 4*Fn-3 + Fn-6
+
+hence sum of even fib numbers less than a given limit L will be 
+>> SUM(Fn) n:6 to L 
+
+
