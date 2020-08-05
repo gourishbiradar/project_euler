@@ -2,6 +2,7 @@
 #include <set>
 #include <chrono>
 #include <string>
+#include <iostream>
 
 class Timer
 {
@@ -13,3 +14,21 @@ class Timer
 		Timer();
 		~Timer();
 };
+
+namespace PrimeGenerator
+{
+	std::vector<long int> getPrimes(double limit);
+}
+
+namespace VectorUtils
+{
+	template<class T>
+		void printArray(std::vector<T> arr)
+		{
+			for(auto& e : arr)
+			{
+				std::cout << e << " " ;
+			}
+		}
+}
+
