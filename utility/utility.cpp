@@ -78,5 +78,36 @@ namespace numberUtils
 			return true;
 		return false;
 	}
+	bool isPrime(int number,std::set<long int> primes)
+	{
+		if(primes.find(number) != primes.end())
+		{
+			return true;
+		}
+		return false;
+	}
+	bool isPrime(int number,std::vector<long int> primes)
+	{
+		std::set<long int> primes_set(numberUtils::getSet(primes));
+		if(primes_set.find(number) != primes_set.end())
+		{
+			return true;
+		}
+		return false;
+	}
+	std::set<long int> getSet(std::vector<long int> arr)
+	{
+		std::set<long int> new_set;
+		for(auto& e : arr)
+		{
+			new_set.insert(e);
+		}
+		return new_set;
+	}
+	int getLargestExponent(int input, int number)
+	{
+		int answer = floor(log(number)/log(input));
+		return answer;
+	}
 }
 

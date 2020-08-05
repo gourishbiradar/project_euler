@@ -21,6 +21,10 @@ namespace numberUtils
 	std::vector<long int> getPrimes(double limit);
 	std::vector<long int> getPrimeDivisors(long int number);
 	bool isPalindrome(int number);
+	std::set<long int> getSet(std::vector<long int>);
+	bool isPrime(int number,std::vector<long int> primes);
+	bool isPrime(int number,std::set<long int> primes);
+	int getLargestExponent(int input,int number);
 }
 
 namespace VectorUtils 
