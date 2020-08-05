@@ -1,0 +1,3 @@
+This problem requires us to calculate prime numbers as quickly as possible.
+
+If we store such prime numbers in a vector and then pick the largest amongst them that can divide input number we get the required answer
