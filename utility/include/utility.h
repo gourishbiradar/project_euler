@@ -20,8 +20,7 @@ namespace numberUtils
 {
 	std::vector<long int> getPrimes(double limit);
 	std::vector<long int> getPrimeDivisors(long int number);
-	template<typename T>
-		bool isPalindrome(T number);
+	bool isPalindrome(int number);
 }
 
 namespace VectorUtils 
