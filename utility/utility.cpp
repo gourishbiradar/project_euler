@@ -64,5 +64,19 @@ namespace numberUtils
 		}
 		return prime_divisors;
 	}
+	bool isPalindrome(int number)
+	{
+		int reversedNumber = 0;
+		int remainder,originalNumber = number;
+		while(number)
+		{
+			remainder = number % 10;
+			reversedNumber = reversedNumber*10 + remainder;
+			number /= 10;
+		}
+		if(originalNumber == reversedNumber)
+			return true;
+		return false;
+	}
 }
 

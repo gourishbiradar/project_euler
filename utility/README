@@ -6,3 +6,4 @@ Writing utility functions in one place can help in reusing them elsewhere in thi
 3. Implement gcd and lcm finder
 4. Implement function that generates a vector of prime divsiors of a number --> DONE
 5. Implement test suites
+6. Implement isPalindrome for integer input --> DONE
