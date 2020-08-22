@@ -1,0 +1,3 @@
+Finding two numbers for which are part of pythagorean triplet. 
+
+O(n^2) possible solution
