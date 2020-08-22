@@ -1,3 +1,10 @@
 Finding two numbers for which are part of pythagorean triplet. 
 
 O(n^2) possible solution
+
+Reading more about Pythagorean triplets from wiki helped 
+
+1. Fibonnaci's method is easy (sum of first k odd numbers is c^2 and the last term is b^2 and sum of the previous terms is a^2 )
+2. Some smart monk came up with 1 1/3, 2 2/5, 3 3/7 and so on... Use the improper fraction to get a and b, side c is 1 more than largest side (denominator)
+3. Dickson (read the wiki) : c = r+s+t, b = r+t, a = r+s, where r^2 = 2*s*t is perfect square. 
+4. m,n method (by far the most intutive method) : m > n, a = m^2 - n^2, b = 2*m*n, c = m^2 + n^2. Implementing this method just cause it seems easiest to wrap my head around.
