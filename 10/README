@@ -1,0 +1,6 @@
+Finding sum of primes upto an upper limit 
+
+Will use sieve of erasthanoes (One day I will learn this spelling) to genreate all primes till upper limit
+Sum up all numbers once genreated
+
+Implemented a more optimized version of SOE

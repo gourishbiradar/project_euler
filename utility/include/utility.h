@@ -25,6 +25,7 @@ namespace numberUtils
 	bool isPrime(int number,std::vector<long int> primes);
 	bool isPrime(int number,std::set<long int> primes);
 	int getLargestExponent(int input,int number);
+	std::vector<int> getUpperLimitPrimes(int upperLimit);
 }
 
 namespace VectorUtils 

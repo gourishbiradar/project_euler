@@ -50,6 +50,33 @@ namespace numberUtils
 		}
 		return primes;
 	}
+	//Notice the difference in signature
+	std::vector<int> getUpperLimitPrimes(int upperLimit)
+	{
+		int sieveBound = (int)(upperLimit - 1) / 2;
+		int upperSqrt = ((int)sqrt(upperLimit)-1)/2;
+		std::vector<bool> potential_primes(sieveBound+1,true);
+		for(int i=1;i<=upperSqrt;i++)
+		{
+			if(potential_primes[i])
+			{
+				for(int j=i*2*(i+1);j<=sieveBound;j+=2*i+1)
+				{
+					potential_primes[j] = false;
+				}
+			}
+		}
+		std::vector<int> primes(upperLimit/(log(upperLimit) - 1.08366));
+		primes.push_back(2);
+		for(int i=1;i<=sieveBound;i++)
+		{
+			if(potential_primes[i])
+			{
+				primes.push_back(2*i+1);
+			}
+		}
+		return primes;
+	}
 
 	std::vector<long int> getPrimeDivisors(long int number)
 	{
@@ -89,11 +116,7 @@ namespace numberUtils
 	bool isPrime(int number,std::vector<long int> primes)
 	{
 		std::set<long int> primes_set(numberUtils::getSet(primes));
-		if(primes_set.find(number) != primes_set.end())
-		{
-			return true;
-		}
-		return false;
+		return isPrime(number,primes_set);
 	}
 	std::set<long int> getSet(std::vector<long int> arr)
 	{
