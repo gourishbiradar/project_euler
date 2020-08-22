@@ -5,23 +5,17 @@
 #include <fstream>
 #include "utility.h"
 
-unsigned long long int getProduct(std::string number_str)
-{
-	unsigned long long int answer = 1;
-	for(auto& c : number_str)
-	{
-		int value = c - '0';
-		answer = answer * value;
-	}
-	return answer;
-}
 unsigned long long int findProduct(std::string inputnumber, int window)
 {
 	unsigned long long int answer = 0; 
 	for(unsigned int i=0;i<=inputnumber.size()-window;i++)
 	{
-		std::string window_number = inputnumber.substr(i,window);
-		answer = std::max(answer,getProduct(window_number));
+		unsigned long long int product = 1; 
+		for(unsigned int k=0;k<window;k++)
+		{
+			product = product * (inputnumber[i+k]-'0');
+		}
+		answer = std::max(answer,product);
 	}
 	return answer;
 }
